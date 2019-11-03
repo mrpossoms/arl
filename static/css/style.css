@@ -1,0 +1,15 @@
+html {
+	font-family: Sans-Serif;
+	color: #333;
+}
+
+.logo {
+	max-width:256px;
+}
+
+a:visited > h1 {
+	color: #333;
+	text-decoration: none;
+}
+
+

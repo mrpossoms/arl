@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-38933930-6"></script>
+    <script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-38933930-6');
+    </script>
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>
+	{% block organization %}{% endblock %}
+	</title>
+
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body class="container-fluid">
+<header class="row">
+	<center><a href="/">{% block header %}{% endblock %}</a></center>
+</header>
+
+<main>
+
+<center><h2>Who are we?</h2></center>
+<p>
+We are hobbyists, students, enthusiasts and professional engineers who make up an encouraging environment for those who are passionate about autonomous robotics and racing. We offer a low-stakes, reoccuring event that encourages you to build, race and improve autonomous racing robots. Anyone of any skill level is welcome. Come learn, create and compete with us!
+</p>
+
+<center><h2>What are we doing?</h2></center>
+<p>
+We are building and racing robots! Currently we are specifically building around 1:10 scale and smaller electric RC models. This allows us to race year round, both inside and outdoors.
+</p>
+
+<center><h2>When and where do we meet?</h2></center>
+<p>
+</p>
+
+{% block content %}{% endblock %}
+</main>
+
+<footer>
+	<center>
+    {% block footer %}
+    {% endblock %}
+	</center>
+</footer>
+
+
+</body>
+</html>
+
