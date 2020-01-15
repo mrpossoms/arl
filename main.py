@@ -17,5 +17,8 @@ if __name__ == '__main__':
     if 'PORT' in os.environ:
         port = os.environ['PORT']
 
+    if os.environ['TEMPLATES_AUTO_RELOAD']:
+        app.config['TEMPLATES_AUTO_RELOAD'] = True
+
     app.run(port=port, host='0.0.0.0')
 

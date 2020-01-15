@@ -19,38 +19,92 @@ gtag('config', 'UA-38933930-6');
 
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>-->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css"/>
+    <style type="text/css">
+        html {
+            font-family: Sans-Serif;
+            color: #333;
+            background: #eee;
+        }
+
+        .logo {
+            max-width:256px;
+        }
+
+        h1, h2, h3, body, footer {
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            color: #666;
+        }
+
+        body {
+            max-width: 60em;
+            padding: 1em;
+            background: #fff;
+        }
+
+        a:visited > h1 {
+            color: #333;
+            text-decoration: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+
+    </style>
 </head>
 
 <body class="container-fluid">
 <header class="row">
-	<center><a href="/">{% block header %}{% endblock %}</a></center>
+	<center><a href="/">{% block header %}{% endblock %}</a><center>
 </header>
 
 <main>
 
-<center><h2>Who are we?</h2></center>
+<h2>Who are we?</h2>
 <p>
-We are hobbyists, students, enthusiasts and professional engineers who make up an encouraging environment for those who are passionate about autonomous robotics and racing. We offer a low-stakes, reoccuring event that encourages you to build, race and improve autonomous racing robots. Anyone of any skill level is welcome. Come learn, create and compete with us!
+The Colorado Autonomous Racing League, or <i>CARL</i> for short, is a group welcoming hobbyists, students, enthusiasts and professional engineers who make up an encouraging environment for those who are passionate about autonomous robotics and racing. We offer a low-stakes, reoccurring event that encourages you to build, race and improve autonomous racing robots. Anyone of any skill level is welcome. Come learn, create and compete with us!
 </p>
 
-<center><h2>What are we doing?</h2></center>
+<h2>What are we doing?</h2>
 <p>
-We are building and racing robots! Currently we are specifically building around 1:10 scale and smaller electric RC models. This allows us to race year round, both inside and outdoors.
+We are building and racing autonomous cars! Well, not real cars. For sake of safety and accessibility we are racing electric R/C models that have been modified to drive themselves. They must navigate an unstructured, indoor race-track and may do so using any sensor technology or method desired.
+</p>
+<p>
+There are few restrictions for the event. All vehicles must be 1:10th scale or smaller. Computation maybe done on-board the vehicle or remotely at a base-station. All vehicles must be electric, with battery capacities less than or equal to XXXAh.
 </p>
 
-<center><h2>When and where do we meet?</h2></center>
+
+<h2>When and where do we meet?</h2>
 <p>
+We have two reoccurring meetings.
+<ul>
+<li><b>Weekly</b> every <b>Thursday</b>, in Denver CO.</li>
+<li><b>Monthly</b> at an R/C car track in the greater Denver area.</li>
+</ul>
+</p>
+<p>
+The weekly meetings usually take place at breweries and cafés in the greater Denver area. Like the group itself, these meetings are informal and unstructured. The main goal of the weekly meeting is to build community amongst members, and discuss relevant subjects of interest. If you want to suggest a topic for the week, just send us a message via one of our social media channels!
+</p>
+<p>
+The monthly meetings are where all the action is. On the first Saturday of the month we meet up to race our vehicles on a local R/C track. Each race day consists of 4 hours for preparation and testing, and 4 hours for actual racing. The prep time gives us time to inspect participant vehicles, and you time for last minute tweaks, or collection of track related data.
+</p>
+<p>
+Once the prep phase is complete, racing will begin. Each racers will be organized into heats depending on the number participating. Each heat will consist of 3 laps around the track, or 10 minutes, which ever passes first. Your standing is determined by your place at the final lap of the heat.
 </p>
 
 {% block content %}{% endblock %}
 </main>
 
 <footer>
-	<center>
+<center>
     {% block footer %}
     {% endblock %}
-	</center>
+</center>
 </footer>
 
 
