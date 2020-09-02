@@ -1,2 +1,2 @@
-# autonomou-racing-leauge
-Informational websites for national autonomous racing leauges
+# Autonomous Racing League
+Informational websites for national autonomous racing leagues
